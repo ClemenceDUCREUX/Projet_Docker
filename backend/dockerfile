@@ -1,0 +1,20 @@
+# Utilisation d'une image de base légère basée sur Alpine Linux avec Node.js 18 préinstallé
+FROM node:18-alpine
+
+# Définition du répertoire de travail à l'intérieur du conteneur
+WORKDIR /app
+
+# Copie des fichiers package.json et package-lock.json (s'ils existent) pour optimiser le cache Docker
+COPY package*.json ./
+
+# Installation des dépendances du projet
+RUN npm install
+
+# Copie de tous les fichiers du projet dans le conteneur
+COPY . .
+
+# Exposition du port 3000 pour permettre l'accès à l'application
+EXPOSE 3000
+
+# Commande exécutée au démarrage du conteneur
+CMD ["node", "server.js"]
