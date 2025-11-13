@@ -1,0 +1,113 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Rubik', sans-serif;
+    background-color: #FFF1F1;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    max-width: 320px;
+    margin: 30px auto;
+    background-color: #FFF1F1;
+
+}
+
+
+img {
+    width: 150px;
+    margin: 0 auto;
+}
+
+input {
+    color: #432000;
+    background-color: #DCE1EB;
+    border: 0;
+    padding: 15px;
+    border-radius: 8px;
+    font-size: 20px;
+    text-align: center; 
+    font-family: 'Rubik', sans-serif;
+    margin-bottom: 10px;
+
+}
+
+button {
+    color: #fdfdfd;
+    background-color: #AC485A;
+    border: 0;
+    padding: 15px;
+    border-radius: 8px;
+    font-size: 20px;
+    text-align: center; 
+    font-family: 'Rubik', sans-serif;
+    
+
+}
+
+ul { 
+ list-style-type: none;
+ padding: 0; 
+ display: flex;
+ flex-wrap: wrap;
+ gap: 10px; 
+}
+
+ul li {
+    background-color: #fffdf8;
+    padding: 10px;
+    box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+    flex-grow: 1;
+    text-align: center;
+    font-size: 20px;
+
+}
+
+.shopping-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 8px;
+    background-color: #fffdf8;
+    border-radius: 8px;
+    box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.2);
+    margin: 5px 0;
+}
+
+.shopping-item span {
+    flex-grow: 1;
+    font-size: 20px;
+    text-align: left;
+    padding-left: 10px;
+}
+
+.edit-button, .delete-button {
+    background: #AC485A; /* Ajoute une couleur de fond */
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    margin-left: 5px;
+    visibility: visible; /* Toujours visibles */
+}
+
+.edit-button:hover {
+    background: #87353F;
+}
+
+.delete-button {
+    background: #E74C3C;
+}
+
+.delete-button:hover {
+    background: #C0392B;
+}
+
+.save-button {
+    background: #27AE60;
+    color: white
+}
